@@ -69,6 +69,23 @@ python3 web_panel.py
 - **设备指纹持久化** — buvid_fp 一旦生成不变, 模拟"老设备", 不每次启动都换
 - **MIT 协议开源** — 致敬原作者 @7Hello80
 
+## 🔐 安全 / 隐私
+
+仓库严格脱敏, 以下文件**本地特有, 不入 git** (`.gitignore` 覆盖):
+
+| 文件 | 含什么 |
+|---|---|
+| `config.json` | 账号 cookie (SESSDATA / bili_jct) + 关键词回复内容 |
+| `panel_config.json` | web 面板 admin 密码 hash + GitHub OAuth |
+| `runtime/browser_cookies.json` | 真实浏览器 9 项设备指纹 cookie |
+| `runtime/buvid_fp.txt` | 持久 buvid_fp |
+| `bot_runtime.log` | 私信收发流水 (含 talker_id + 消息文本) |
+| `reply_state.json` | 已处理 msg_id 列表 |
+| `message_activity.json` | 消息处理活动事件 |
+
+部署或 fork 时, 这些文件**只在本地存在**. 仓库里不会找到任何真账号 cookie /
+真私信内容 / 真关键词回复 / admin 密码.
+
 ## 📜 License
 
 [MIT](LICENSE) · 基于 [@7Hello80/Bilibili_PrivateMessage_Bot](https://github.com/7Hello80/Bilibili_PrivateMessage_Bot) (MIT) fork
