@@ -2836,7 +2836,7 @@ def create_templates():
                 <i class="fa fa-images text-gray-400 w-5"></i>
                 <span>图床管理</span>
             </a>
-            <a href="https://github.com/heishiqing/Vbot" target="_blank" class="nav-item flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg transition">
+            <a href="https://github.com/heishiqing/Vbot-B" target="_blank" class="nav-item flex items-center space-x-3 px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg transition">
                 <i class="fab fa-github text-gray-800 w-5"></i>
                 <span>GitHub仓库</span>
             </a>
@@ -3075,19 +3075,19 @@ def create_templates():
                 <h3 class="text-lg font-medium text-gray-800 mb-4">项目Github数据</h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <p align="center" class="display flex">
-                        <a href="https://github.com/heishiqing/Vbot/issues" style="text-decoration:none; margin: auto .5em;">
-                            <img src="https://img.shields.io/github/issues/heishiqing/Vbot.svg?style=flat&amp;color=red" alt="GitHub issues">
+                        <a href="https://github.com/heishiqing/Vbot-B/issues" style="text-decoration:none; margin: auto .5em;">
+                            <img src="https://img.shields.io/github/issues/heishiqing/Vbot-B.svg?style=flat&amp;color=red" alt="GitHub issues">
                         </a>
-                        <a href="https://github.com/heishiqing/Vbot/stargazers" style="text-decoration:none; margin: auto .5em;">
-                            <img src="https://img.shields.io/github/stars/heishiqing/Vbot.svg?style=flat&amp;color=yellow" alt="GitHub stars">
+                        <a href="https://github.com/heishiqing/Vbot-B/stargazers" style="text-decoration:none; margin: auto .5em;">
+                            <img src="https://img.shields.io/github/stars/heishiqing/Vbot-B.svg?style=flat&amp;color=yellow" alt="GitHub stars">
                         </a>
-                        <a href="https://github.com/heishiqing/Vbot/network" style="text-decoration:none; margin: auto .5em;">
-                            <img src="https://img.shields.io/github/forks/heishiqing/Vbot.svg?style=flat&amp;color=blue" alt="GitHub forks">
+                        <a href="https://github.com/heishiqing/Vbot-B/network" style="text-decoration:none; margin: auto .5em;">
+                            <img src="https://img.shields.io/github/forks/heishiqing/Vbot-B.svg?style=flat&amp;color=blue" alt="GitHub forks">
                         </a>
-                        <a href="https://github.com/heishiqing/Vbot/blob/master/LICENSE" style="text-decoration:none; margin: auto .5em;">
+                        <a href="https://github.com/heishiqing/Vbot-B/blob/master/LICENSE" style="text-decoration:none; margin: auto .5em;">
                             <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat" alt="GitHub license">
                         </a>
-                        <a href="https://github.com/heishiqing/Vbot/" style="margin: auto .5em; color: #238b8b;">
+                        <a href="https://github.com/heishiqing/Vbot-B/" style="margin: auto .5em; color: #238b8b;">
                             <u>如果喜欢请各位点个免费的 Star 吧！</u>
                         </a>
                     </p>
@@ -3886,11 +3886,11 @@ def create_templates():
                         Copyright &copy; 2025 淡意往事.
                     </p>
                     <p class="text-xs text-gray-500 mt-1">
-                        使用 <a href="https://github.com/heishiqing/Vbot/blob/main/LICENSE" target="_blank" class="text-gray-700 hover:text-gray-600 transition" title="MIT许可协议">MIT许可协议</a> 开放源代码
+                        使用 <a href="https://github.com/heishiqing/Vbot-B/blob/main/LICENSE" target="_blank" class="text-gray-700 hover:text-gray-600 transition" title="MIT许可协议">MIT许可协议</a> 开放源代码
                     </p>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <a href="https://github.com/heishiqing/Vbot" target="_blank" class="text-gray-700 hover:text-gray-600 transition" title="GitHub">
+                    <a href="https://github.com/heishiqing/Vbot-B" target="_blank" class="text-gray-700 hover:text-gray-600 transition" title="GitHub">
                         <i class="fab fa-github text-lg"></i>
                     </a>
                     <a href="https://space.bilibili.com/2142524663?spm_id_from=333.1007.0.0" target="_blank" class="text-gray-700 hover:text-bilibili transition" title="Bilibili">

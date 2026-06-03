@@ -28,7 +28,7 @@ Vbot 是基于 [@7Hello80/Bilibili_PrivateMessage_Bot v1.1.1](https://github.com
 ## 🚀 快速开始
 
 ```bash
-git clone https://github.com/heishiqing/Vbot.git
+git clone https://github.com/heishiqing/Vbot-B.git
 cd Vbot
 python3 -m venv .venv
 source .venv/bin/activate

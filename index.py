@@ -895,7 +895,7 @@ def inspect_config():
     print(f"{Fore.GREEN}程序名称: {Fore.WHITE}Vbot — B 站私信自动回复机器人")
     print(f"{Fore.GREEN}版本号: {Fore.WHITE}v{version}")
     print(f"{Fore.GREEN}作者: {Fore.WHITE}heishiqing")
-    print(f"{Fore.GREEN}Github: {Fore.WHITE}https://github.com/heishiqing/Vbot")
+    print(f"{Fore.GREEN}Github: {Fore.WHITE}https://github.com/heishiqing/Vbot-B")
     print(f"{Fore.GREEN}基于: {Fore.WHITE}@7Hello80/Bilibili_PrivateMessage_Bot v1.1.1 (MIT)")
     print(f"{Fore.GREEN}启动时间: {Fore.WHITE}{time.strftime('%Y-%m-%d %H:%M:%S')}")
     return True
