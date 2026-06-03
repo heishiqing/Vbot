@@ -206,21 +206,22 @@ class SimpleBilibiliReply:
 
         self.plugin_loader = None
         
-        # 2026-06-03 owner 修 412: B 站升级 web_im/send_msg 风控, 必须带 buvid3/buvid4/b_nut
-        # SPI 公开接口, 匿名拉 (启动一次, 模块级缓存). 实测无 buvid 返 412+HTML 风控页; 加上后 200.
+        # 2026-06-03 owner 修 412: B 站升级 web_im/send_msg 风控, 必须带设备指纹 cookie
+        # buvid_spi.get() 优先借真浏览器登录后拿的 9 项 (runtime/browser_cookies.json),
+        # 没有则 fallback SPI 匿名 + 本地持久 fp. 实测无 buvid 返 412+HTML; 加上后 200.
         buvids = buvid_spi.get()
         cookie_parts = [
             f"SESSDATA={sessdata}",
             f"bili_jct={bili_jct}",
             f"bili_ticket={bili_ticket.get()}",
-            f"DedeUserID={self_uid}",  # web 端登录态标识
+            f"DedeUserID={self_uid}",
         ]
-        if buvids.get("buvid3"):
-            cookie_parts.append(f"buvid3={buvids['buvid3']}")
-        if buvids.get("buvid4"):
-            cookie_parts.append(f"buvid4={buvids['buvid4']}")
-        if buvids.get("b_nut"):
-            cookie_parts.append(f"b_nut={buvids['b_nut']}")
+        # 设备指纹 cookies (按浏览器真集顺序)
+        for k in ("DedeUserID__ckMd5", "buvid3", "buvid4", "b_nut", "buvid_fp",
+                  "_uuid", "b_lsid", "sid", "bili_ticket_expires"):
+            v = buvids.get(k)
+            if v:
+                cookie_parts.append(f"{k}={v}")
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
             "Accept": "*/*",
